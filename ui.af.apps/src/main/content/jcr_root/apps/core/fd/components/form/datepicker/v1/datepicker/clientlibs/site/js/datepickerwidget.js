@@ -990,7 +990,7 @@ if (typeof window.DatePickerWidget === 'undefined') {
     }
 
     #clearDate(view) {
-      this.setValue("");
+      this.#model.value = "";
       let existingSelectedItem = this['$' + view.toLowerCase()].getElementsByClassName("dp-selected")[0];
       if (existingSelectedItem) {
         existingSelectedItem.classList.remove("dp-selected");

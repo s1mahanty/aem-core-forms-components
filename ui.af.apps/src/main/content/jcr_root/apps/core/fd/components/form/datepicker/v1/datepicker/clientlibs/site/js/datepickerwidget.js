@@ -995,7 +995,6 @@ if (typeof window.DatePickerWidget === 'undefined') {
       if (existingSelectedItem) {
         existingSelectedItem.classList.remove("dp-selected");
       }
-      this.#dp.style.display = "none";
     }
 
     #getEvent() {
